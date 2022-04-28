@@ -1,0 +1,19 @@
+
+    header {
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      float: left;
+      width: 100px;
+    }
+
+    li {
+      border: 1px solid salmon;
+    }
+  

@@ -1,0 +1,65 @@
+<!-- 一个例子 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      float: left;
+      width: 100px;
+    }
+
+    li {
+      border: 1px solid salmon;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    成绩表格
+  </header>
+  <section>
+    <ul>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+    </ul>
+    <ul>
+      <li>99</li>
+      <li>98</li>
+      <li>100</li>
+    </ul>
+  </section>
+  <div>
+    <input type="text" value="0" id="val"><br>
+    <input type="button" value="加1" id="btn1">
+    <input type="button" value="减1" id="btn2">
+  </div>
+  <script>
+    let btn1 = document.getElementById('btn1');
+    let btn2 = document.getElementById('btn2');
+    let val = document.getElementById('val')
+    btn1.addEventListener('click', (e) => {
+      this.val.value++
+    })
+    btn2.addEventListener('click', (e) => {
+      this.val.value--
+    })
+  </script>
+</body>
+
+</html>
